@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAZOP Documentation Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    padding:50px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.5em;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.8;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.section-title{
+    margin-top:40px;
+    margin-bottom:15px;
+    font-size:1.3em;
+    opacity:0.9;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.2);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.85;
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.core{ background:#3182ce; }
+.advanced{ background:#805ad5; }
+.application{ background:#38a169; }
+.appendix{ background:#dd6b20; }
+
+footer{
+    text-align:center;
+    margin-top:60px;
+    padding:20px;
+    opacity:0.6;
+}
+
+@media(max-width:600px){
+    header h1{ font-size:1.8em; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📘 HAZOP Documentation Portal</h1>
+    <p>Studi Bahaya dan Kemampuan Operasi</p>
+</header>
+
+<div class="container">
+
+    <div class="section-title">📚 Dokumen Utama</div>
+
+    <div class="grid">
+
+        <!-- Bab 4-9 -->
+        <a href="Pengenalan Hazop Bab 4-9.html" class="card">
+            <h2>Bab 4 – 9</h2>
+            <p>Prosedur & Metodologi Studi HAZOP</p>
+            <span class="badge core">Core Study</span>
+        </a>
+
+        <!-- Bab 10 -->
+        <a href="Pengenalan Hazop Bab 10.html" class="card">
+            <h2>Bab 10</h2>
+            <p>Aspek Lanjutan dan Evaluasi</p>
+            <span class="badge advanced">Advanced</span>
+        </a>
+
+        <!-- Bab 11-12 -->
+        <a href="Pengenalan Hazop Bab 11-12.html" class="card">
+            <h2>Bab 11 – 12</h2>
+            <p>Aplikasi Spesifik & Faktor Keberhasilan</p>
+            <span class="badge application">Application</span>
+        </a>
+
+    </div>
+
+    <div class="section-title">📎 Lampiran</div>
+
+    <div class="grid" style="margin-top:20px;">
+
+        <!-- Lampiran 2 -->
+        <a href="Lampiran2.html" class="card">
+            <h2>Lampiran 2</h2>
+            <p>Checklist & Ilustrasi Studi HAZOP</p>
+            <span class="badge appendix">Appendix</span>
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+© 2026 HAZOP Documentation | Professional Edition
+</footer>
+
+</body>
+</html>
